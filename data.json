@@ -1,28 +1,534 @@
 {
-  "updated": "2026-07-03",
-  "source": "seeded manually from NBC Sports / Goal.com trackers",
+  "updated": "2026-07-04",
+  "source": "football-data.org /competitions/WC/scorers",
   "clubs": [
-    {"club": "Real Madrid", "league": "La Liga", "scorers": [["Mbappé", 6], ["Vinícius Jr", 4], ["Bellingham", 2], ["Güler", 1]]},
-    {"club": "Paris Saint-Germain", "league": "Ligue 1", "scorers": [["Dembélé", 4], ["Barcola", 2], ["Doué", 1], ["Hakimi", 1], ["João Neves", 1], ["Nuno Mendes", 1]]},
-    {"club": "Inter Miami", "league": "MLS", "scorers": [["Messi", 7]]},
-    {"club": "Bayern Munich", "league": "Bundesliga", "scorers": [["Kane", 5], ["Musiala", 1], ["Luis Díaz", 1]]},
-    {"club": "Arsenal", "league": "Premier League", "scorers": [["Havertz", 3], ["Trossard", 2], ["Martinelli", 1], ["Gyökeres", 1]]},
-    {"club": "Manchester United", "league": "Premier League", "scorers": [["Cunha", 3], ["Amad", 2], ["Casemiro", 1], ["Rashford", 1]]},
-    {"club": "Sunderland", "league": "Premier League", "scorers": [["Brobbey", 3], ["Diarra", 2], ["Xhaka", 1], ["Isidor", 1]]},
-    {"club": "Crystal Palace", "league": "Premier League", "scorers": [["Ismaïla Sarr", 4], ["Kamada", 2], ["Muñoz", 1]]},
-    {"club": "Liverpool", "league": "Premier League", "scorers": [["Gakpo", 3], ["Salah", 1], ["Van Dijk", 1], ["Isak", 1]]},
-    {"club": "Manchester City", "league": "Premier League", "scorers": [["Haaland", 5]]},
-    {"club": "Newcastle United", "league": "Premier League", "scorers": [["Elanga", 2], ["Wissa", 2]]},
-    {"club": "Villarreal", "league": "La Liga", "scorers": [["Nicolas Pépé", 2], ["Pape Gueye", 2]]},
-    {"club": "Napoli", "league": "Serie A", "scorers": [["Lukaku", 2], ["De Bruyne", 1]]},
-    {"club": "Aston Villa", "league": "Premier League", "scorers": [["Tielemans", 2], ["McGinn", 1]]},
-    {"club": "Juventus", "league": "Serie A", "scorers": [["Jonathan David", 3]]},
-    {"club": "Al-Nassr", "league": "Saudi Pro League", "scorers": [["Ronaldo", 3]]},
-    {"club": "PSV Eindhoven", "league": "Eredivisie", "scorers": [["Saibari", 3]]},
-    {"club": "VfB Stuttgart", "league": "Bundesliga", "scorers": [["Undav", 3]]},
-    {"club": "SC Freiburg", "league": "Bundesliga", "scorers": [["Manzambi", 3]]},
-    {"club": "AS Monaco", "league": "Ligue 1", "scorers": [["Balogun", 3]]},
-    {"club": "Al-Qadsiah", "league": "Saudi Pro League", "scorers": [["Quiñones", 3]]}
+    {
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "scorers": [
+        [
+          "Mbappé",
+          6
+        ],
+        [
+          "Junior",
+          4
+        ],
+        [
+          "Bellingham",
+          2
+        ],
+        [
+          "Pina",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Crystal Palace",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Sarr",
+          4
+        ],
+        [
+          "Kamada",
+          2
+        ],
+        [
+          "Muñoz",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Arsenal",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Havertz",
+          3
+        ],
+        [
+          "Trossard",
+          2
+        ],
+        [
+          "Oh",
+          1
+        ],
+        [
+          "Gyökeres",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "scorers": [
+        [
+          "Kane",
+          5
+        ],
+        [
+          "Musiala",
+          1
+        ],
+        [
+          "Díaz",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Paris Saint-Germain",
+      "league": "Ligue 1",
+      "scorers": [
+        [
+          "Dembélé",
+          4
+        ],
+        [
+          "Barcola",
+          2
+        ],
+        [
+          "Neves",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Inter Miami",
+      "league": "MLS",
+      "scorers": [
+        [
+          "Messi",
+          7
+        ]
+      ]
+    },
+    {
+      "club": "Liverpool",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Gakpo",
+          3
+        ],
+        [
+          "Dijk",
+          1
+        ],
+        [
+          "Isak",
+          1
+        ],
+        [
+          "Salah",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Manchester United",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Cunha",
+          3
+        ],
+        [
+          "Diallo",
+          2
+        ],
+        [
+          "Rashford",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Sunderland",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Brobbey",
+          3
+        ],
+        [
+          "Diarra",
+          2
+        ],
+        [
+          "Xhaka",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Newcastle United",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Wissa",
+          3
+        ],
+        [
+          "Elanga",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Manchester City",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Haaland",
+          5
+        ]
+      ]
+    },
+    {
+      "club": "Villarreal",
+      "league": "La Liga",
+      "scorers": [
+        [
+          "Pépé",
+          2
+        ],
+        [
+          "Gueye",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Aston Villa",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Tielemans",
+          2
+        ],
+        [
+          "Mcginn",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Qadsiah",
+      "league": "Saudi Pro League",
+      "scorers": [
+        [
+          "Quiñones",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "AS Monaco",
+      "league": "Ligue 1",
+      "scorers": [
+        [
+          "Balogun",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "PSV Eindhoven",
+      "league": "Eredivisie",
+      "scorers": [
+        [
+          "Saibari",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "VfB Stuttgart",
+      "league": "Bundesliga",
+      "scorers": [
+        [
+          "Undav",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "SC Freiburg",
+      "league": "Bundesliga",
+      "scorers": [
+        [
+          "Manzambi",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Juventus",
+      "league": "Serie A",
+      "scorers": [
+        [
+          "David",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Al-Nassr",
+      "league": "Saudi Pro League",
+      "scorers": [
+        [
+          "Ronaldo",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Napoli",
+      "league": "Serie A",
+      "scorers": [
+        [
+          "Lukaku",
+          2
+        ]
+      ]
+    }
   ],
-  "unmapped": []
+  "unmapped": [
+    [
+      "Mikel Oyarzabal",
+      4
+    ],
+    [
+      "Elijah Just",
+      3
+    ],
+    [
+      "Raúl Jiménez",
+      2
+    ],
+    [
+      "Cyle Larin",
+      2
+    ],
+    [
+      "Breel Embolo",
+      2
+    ],
+    [
+      "Crysencio Summerville",
+      2
+    ],
+    [
+      "Yasin Ayari",
+      2
+    ],
+    [
+      "Emam Ashour",
+      2
+    ],
+    [
+      "Maximiliano Araújo",
+      2
+    ],
+    [
+      "Ramin Rezaeian",
+      2
+    ],
+    [
+      "Marko Arnautovic",
+      2
+    ],
+    [
+      "Ruben Vargas",
+      2
+    ],
+    [
+      "Ermin Mahmic",
+      2
+    ],
+    [
+      "Ayase Ueda",
+      2
+    ],
+    [
+      "Riyad Mahrez",
+      2
+    ],
+    [
+      "Ladislav Krejčí",
+      1
+    ],
+    [
+      "In-beom Hwang",
+      1
+    ],
+    [
+      "Jovo Lukić",
+      1
+    ],
+    [
+      "Mauricio",
+      1
+    ],
+    [
+      "Gio Reyna",
+      1
+    ],
+    [
+      "Boualem Khoukhi",
+      1
+    ],
+    [
+      "Nestor Irankunda",
+      1
+    ],
+    [
+      "Connor Metcalfe",
+      1
+    ],
+    [
+      "Felix Kalu Nmecha",
+      1
+    ],
+    [
+      "Livano Comenencia",
+      1
+    ],
+    [
+      "Nico Schlotterbeck",
+      1
+    ],
+    [
+      "Nathaniel Brown",
+      1
+    ],
+    [
+      "Keito Nakamura",
+      1
+    ],
+    [
+      "Omar Rekik",
+      1
+    ],
+    [
+      "Mattias Svanberg",
+      1
+    ],
+    [
+      "Abdulelah Al Amri",
+      1
+    ],
+    [
+      "Mohammad Mohebi",
+      1
+    ],
+    [
+      "Ibrahim M'Baye",
+      1
+    ],
+    [
+      "Aymen Hussein",
+      1
+    ],
+    [
+      "Leo Østigård",
+      1
+    ],
+    [
+      "Romano Schmid",
+      1
+    ],
+    [
+      "Ali Olwan",
+      1
+    ],
+    [
+      "Martin Baturina",
+      1
+    ],
+    [
+      "Petar Musa",
+      1
+    ],
+    [
+      "Caleb Yirenkyi",
+      1
+    ],
+    [
+      "Abbosbek Fayzullaev",
+      1
+    ],
+    [
+      "Jaminton Campaz",
+      1
+    ],
+    [
+      "Michal Sadílek",
+      1
+    ],
+    [
+      "Teboho Mokoena",
+      1
+    ],
+    [
+      "Nathan-Dylan Saliba",
+      1
+    ],
+    [
+      "Luis Romo",
+      1
+    ],
+    [
+      "Alex Freeman",
+      1
+    ],
+    [
+      "Matías Galarza",
+      1
+    ],
+    [
+      "Franck Kessié",
+      1
+    ],
+    [
+      "Junya Ito",
+      1
+    ],
+    [
+      "Lamine Yamal",
+      1
+    ],
+    [
+      "Agustín Canobbio",
+      1
+    ],
+    [
+      "Hélio Varela",
+      1
+    ],
+    [
+      "Finn Surman",
+      1
+    ],
+    [
+      "Mostafa Ziko",
+      1
+    ],
+    [
+      "Trezeguet",
+      1
+    ],
+    [
+      "Marcus Pedersen",
+      1
+    ]
+  ]
 }
