@@ -29,6 +29,7 @@ jobs:
           git config user.name "wc-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data.json
+          git add club_cache.json || true
           git diff --cached --quiet && echo "No new goals since yesterday." && exit 0
           git commit -m "Data refresh $(date -u +%F)"
           git push
