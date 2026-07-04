@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WC26 · Club Goal Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pitch:#0a120e; --panel:#111c16; --panel-2:#0e1811; --line:#22332a;
+    --chalk:#f2f5f0; --muted:#84958a; --gold:#d9a93c; --gold-soft:rgba(217,169,60,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--pitch); color:var(--chalk);
+    font-family:'Archivo',system-ui,sans-serif; font-size:15px; line-height:1.5;
+    background-image:repeating-linear-gradient(90deg, rgba(255,255,255,.012) 0 1px, transparent 1px 120px);
+    min-height:100vh;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 24px 80px}
+
+  .eyebrow{display:flex;align-items:center;gap:12px;font-family:'Barlow Condensed';font-weight:600;
+    font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+  h1{font-family:'Barlow Condensed';font-weight:800;font-size:clamp(44px,7vw,76px);
+    line-height:.95;text-transform:uppercase;margin:18px 0 10px}
+  h1 .thin{color:var(--muted);font-weight:500}
+  .sub{color:var(--muted);max-width:560px;font-size:15px}
+  .sub b{color:var(--chalk);font-weight:600}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);
+    border-radius:10px;margin:36px 0 44px;overflow:hidden;background:var(--panel-2)}
+  .stat{padding:18px 20px;border-left:1px solid var(--line)}
+  .stat:first-child{border-left:none}
+  .stat .num{font-family:'Barlow Condensed';font-weight:700;font-size:38px;line-height:1}
+  .stat .num em{font-style:normal;color:var(--gold)}
+  .stat .lbl{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
+  .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+    margin-bottom:14px;flex-wrap:wrap}
+  .section-title{font-family:'Barlow Condensed';font-weight:700;font-size:22px;
+    text-transform:uppercase;letter-spacing:.08em}
+  .section-title .tick{color:var(--gold)}
+  .section-note{color:var(--muted);font-size:12.5px}
+
+  .boot-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:52px}
+  .boot{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:14px 14px 12px;position:relative;overflow:hidden}
+  .boot.leader{border-color:rgba(217,169,60,.55);background:linear-gradient(180deg,var(--gold-soft),var(--panel))}
+  .boot .g{font-family:'Barlow Condensed';font-weight:800;font-size:40px;line-height:1}
+  .boot.leader .g{color:var(--gold)}
+  .boot .name{font-weight:600;font-size:14px;margin-top:6px}
+  .boot .club{display:flex;align-items:center;gap:6px;margin-top:5px;color:var(--muted);font-size:12px}
+  .boot .crown{position:absolute;top:10px;right:12px;font-family:'Barlow Condensed';font-weight:600;
+    font-size:11px;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
+
+  .badge{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-family:'Barlow Condensed';font-weight:700;font-size:14px;flex-shrink:0;
+    position:relative;overflow:hidden;box-shadow:inset 0 0 0 2px rgba(255,255,255,.12)}
+  .badge.sm{width:18px;height:18px;font-size:8px}
+  .badge img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+    padding:5px;background:#f6f6f3;border-radius:50%}
+  .badge.sm img{padding:2px}
+
+  .toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel-2)}
+  .toggle button{appearance:none;border:none;background:transparent;color:var(--muted);
+    font-family:'Barlow Condensed';font-weight:600;font-size:14px;letter-spacing:.12em;
+    text-transform:uppercase;padding:9px 18px;cursor:pointer;transition:color .15s, background .15s}
+  .toggle button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+  .toggle button.on{background:var(--gold);color:#141006}
+
+  .board{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel-2)}
+  .row{display:grid;grid-template-columns:52px 250px 1fr 130px;align-items:center;gap:14px;
+    padding:14px 20px;border-top:1px solid var(--line);transition:background .15s}
+  .row:first-child{border-top:none}
+  .row:hover{background:rgba(255,255,255,.025)}
+  .rank{font-family:'Barlow Condensed';font-weight:700;font-size:22px;color:var(--muted)}
+  .row.top3 .rank{color:var(--gold)}
+  .club-cell{display:flex;align-items:center;gap:12px;min-width:0}
+  .club-name{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .club-league{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:1px}
+  .mid{min-width:0}
+  .dots{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:7px}
+  .dot{width:11px;height:11px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.25);
+    opacity:0;transform:scale(.3);animation:pop .3s ease forwards}
+  @keyframes pop{to{opacity:1;transform:scale(1)}}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none;opacity:1;transform:none}}
+  .scorers{display:flex;flex-wrap:wrap;gap:5px}
+  .chip{font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:20px;
+    padding:2px 9px;white-space:nowrap;background:var(--panel)}
+  .chip b{color:var(--chalk);font-weight:600}
+  .totals{text-align:right}
+  .totals .big{font-family:'Barlow Condensed';font-weight:800;font-size:32px;line-height:1}
+  .totals .unit{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+
+  .footnote{margin-top:22px;color:var(--muted);font-size:12.5px;max-width:720px;line-height:1.6}
+  .footnote b{color:var(--chalk)}
+
+  @media (max-width:900px){
+    .boot-row{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat{border-top:1px solid var(--line)}
+    .row{grid-template-columns:36px 1fr 90px;grid-template-areas:"rank club totals" ". mid mid"}
+    .rank{grid-area:rank}.club-cell{grid-area:club}.mid{grid-area:mid}.totals{grid-area:totals}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">FIFA World Cup 2026 &middot; North America</div>
+    <h1>Club goal<br>tracker <span class="thin">/ WC26</span></h1>
+    <p class="sub">Every World Cup goal, credited back to the scorer's <b>club side</b>.
+    Data refreshes daily &middot; last update <b id="updated">&hellip;</b>.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="stat-goals">&ndash;</div><div class="lbl">Goals tracked</div></div>
+    <div class="stat"><div class="num" id="stat-clubs">&ndash;</div><div class="lbl">Clubs on the board</div></div>
+    <div class="stat"><div class="num"><em id="stat-top-num">&ndash;</em></div><div class="lbl" id="stat-top-lbl">Top club</div></div>
+    <div class="stat"><div class="num"><em id="stat-most-num">&ndash;</em></div><div class="lbl" id="stat-most-lbl">Most scorers</div></div>
+  </div>
+
+  <div class="section-head">
+    <div class="section-title"><span class="tick">///</span> Golden Boot race</div>
+    <div class="section-note">Top five scorers across all clubs</div>
+  </div>
+  <div class="boot-row" id="boot"></div>
+
+  <div class="section-head">
+    <div class="section-title"><span class="tick">///</span> Club leaderboard</div>
+    <div class="toggle" role="group" aria-label="Sort leaderboard">
+      <button class="on" id="byGoals">By goals</button>
+      <button id="byScorers">By scorers</button>
+    </div>
+  </div>
+  <div class="board" id="board"></div>
+
+  <p class="footnote" id="footnote">
+    Each dot is one World Cup goal. Clubs are where players spent the 2025&ndash;26 season.
+    Crests load from Wikipedia; if one fails, a colour-matched monogram takes its place.
+  </p>
+
+</div>
+
+<script>
+/* Visual identity per club. Any club not listed here gets a neutral badge,
+   so new clubs appearing in data.json never break the page. */
+const STYLES = {
+  "Real Madrid":         {abbr:"RM",  bg:"#f5f0e6", fg:"#00337a", ring:"#c9a23c", logo:"Real Madrid CF.svg"},
+  "Paris Saint-Germain": {abbr:"PSG", bg:"#004170", fg:"#ffffff", ring:"#da291c", logo:"Paris Saint-Germain F.C..svg"},
+  "Inter Miami":         {abbr:"MIA", bg:"#f7b5cd", fg:"#231f20", ring:"#231f20", logo:"Inter Miami CF logo.svg"},
+  "Bayern Munich":       {abbr:"FCB", bg:"#dc052d", fg:"#ffffff", ring:"#0066b2", logo:"FC Bayern München logo (2017).svg"},
+  "Arsenal":             {abbr:"ARS", bg:"#ef0107", fg:"#ffffff", ring:"#023474", logo:"Arsenal FC.svg"},
+  "Manchester United":   {abbr:"MUN", bg:"#da291c", fg:"#fbe122", ring:"#fbe122", logo:"Manchester United FC crest.svg"},
+  "Sunderland":          {abbr:"SUN", bg:"#eb172b", fg:"#ffffff", ring:"#ffffff", logo:"Logo Sunderland.svg"},
+  "Crystal Palace":      {abbr:"CPFC",bg:"#1b458f", fg:"#ffffff", ring:"#c4122e", logo:"Crystal Palace FC logo (2022).svg"},
+  "Liverpool":           {abbr:"LIV", bg:"#c8102e", fg:"#ffffff", ring:"#00b2a9", logo:"Liverpool FC.svg"},
+  "Manchester City":     {abbr:"MCI", bg:"#6cabdd", fg:"#1c2c5b", ring:"#1c2c5b", logo:"Manchester City FC badge.svg"},
+  "Newcastle United":    {abbr:"NEW", bg:"#241f20", fg:"#ffffff", ring:"#ffffff", logo:"Newcastle United Logo.svg"},
+  "Villarreal":          {abbr:"VIL", bg:"#ffe667", fg:"#005187", ring:"#005187", logo:"Villarreal CF logo-en.svg"},
+  "Napoli":              {abbr:"NAP", bg:"#12a0d7", fg:"#ffffff", ring:"#003c82", logo:"SSC Napoli (2007).svg"},
+  "Aston Villa":         {abbr:"AVL", bg:"#670e36", fg:"#95bfe5", ring:"#95bfe5", logo:"Aston Villa FC crest (2023).svg"},
+  "Juventus":            {abbr:"JUV", bg:"#0b0b0b", fg:"#ffffff", ring:"#ffffff", logo:"Juventus FC 2017 icon (black).svg"},
+  "Al-Nassr":            {abbr:"NAS", bg:"#ffd800", fg:"#1d2a5c", ring:"#1d2a5c", logo:"Al Nassr FC Logo.svg"},
+  "PSV Eindhoven":       {abbr:"PSV", bg:"#ed1c24", fg:"#ffffff", ring:"#ffffff", logo:"PSV Eindhoven.svg"},
+  "VfB Stuttgart":       {abbr:"VFB", bg:"#f2f2f2", fg:"#e32219", ring:"#e32219", logo:"VfB Stuttgart 1893 Logo.svg"},
+  "SC Freiburg":         {abbr:"SCF", bg:"#e60000", fg:"#ffffff", ring:"#0b0b0b", logo:"SC Freiburg logo.svg"},
+  "AS Monaco":           {abbr:"ASM", bg:"#e63946", fg:"#ffffff", ring:"#f2d16b", logo:"AS Monaco FC.svg"},
+  "Al-Qadsiah":          {abbr:"QAD", bg:"#f9d616", fg:"#2b2b2b", ring:"#2b2b2b", logo:"Al-Qadsiah FC logo.svg"},
+};
+
+/* Fallback so opening the file straight from disk (no server, so fetch
+   can't read data.json) still shows something instead of a blank page. */
+const SEED = {
+  updated:"2026-07-03",
+  clubs:[
+    {club:"Real Madrid",league:"La Liga",scorers:[["Mbappé",6],["Vinícius Jr",4],["Bellingham",2],["Güler",1]]},
+    {club:"Paris Saint-Germain",league:"Ligue 1",scorers:[["Dembélé",4],["Barcola",2],["Doué",1],["Hakimi",1],["João Neves",1],["Nuno Mendes",1]]},
+    {club:"Inter Miami",league:"MLS",scorers:[["Messi",7]]},
+    {club:"Bayern Munich",league:"Bundesliga",scorers:[["Kane",5],["Musiala",1],["Luis Díaz",1]]},
+    {club:"Arsenal",league:"Premier League",scorers:[["Havertz",3],["Trossard",2],["Martinelli",1],["Gyökeres",1]]},
+    {club:"Manchester United",league:"Premier League",scorers:[["Cunha",3],["Amad",2],["Casemiro",1],["Rashford",1]]},
+    {club:"Sunderland",league:"Premier League",scorers:[["Brobbey",3],["Diarra",2],["Xhaka",1],["Isidor",1]]},
+    {club:"Crystal Palace",league:"Premier League",scorers:[["Ismaïla Sarr",4],["Kamada",2],["Muñoz",1]]},
+    {club:"Liverpool",league:"Premier League",scorers:[["Gakpo",3],["Salah",1],["Van Dijk",1],["Isak",1]]},
+    {club:"Manchester City",league:"Premier League",scorers:[["Haaland",5]]},
+    {club:"Newcastle United",league:"Premier League",scorers:[["Elanga",2],["Wissa",2]]},
+    {club:"Villarreal",league:"La Liga",scorers:[["Nicolas Pépé",2],["Pape Gueye",2]]},
+    {club:"Napoli",league:"Serie A",scorers:[["Lukaku",2],["De Bruyne",1]]},
+    {club:"Aston Villa",league:"Premier League",scorers:[["Tielemans",2],["McGinn",1]]},
+    {club:"Juventus",league:"Serie A",scorers:[["Jonathan David",3]]},
+    {club:"Al-Nassr",league:"Saudi Pro League",scorers:[["Ronaldo",3]]},
+    {club:"PSV Eindhoven",league:"Eredivisie",scorers:[["Saibari",3]]},
+    {club:"VfB Stuttgart",league:"Bundesliga",scorers:[["Undav",3]]},
+    {club:"SC Freiburg",league:"Bundesliga",scorers:[["Manzambi",3]]},
+    {club:"AS Monaco",league:"Ligue 1",scorers:[["Balogun",3]]},
+    {club:"Al-Qadsiah",league:"Saudi Pro League",scorers:[["Quiñones",3]]}
+  ]
+};
+
+let clubs = [];
+let mode = 'goals';
+
+function styleFor(name){
+  if (STYLES[name]) return STYLES[name];
+  const key = Object.keys(STYLES).find(k =>
+    k.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(k.toLowerCase()));
+  if (key) return STYLES[key];
+  return {abbr:name.split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase(),
+          bg:"#2c3d33", fg:"#f2f5f0", ring:"#84958a", logo:null};
+}
+
+function badge(name, sm){
+  const s = styleFor(name);
+  const img = s.logo
+    ? `<img src="https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(s.logo)}"
+        alt="${name} crest" loading="lazy" onerror="this.remove()">`
+    : '';
+  return `<span class="badge${sm?' sm':''}" style="background:${s.bg};color:${s.fg};
+    box-shadow:inset 0 0 0 2px ${s.ring}55, inset 0 0 0 ${sm?1:2}px rgba(0,0,0,.15)">${s.abbr}${img}</span>`;
+}
+
+function render(){
+  const sorted = [...clubs].sort((a,b)=>
+    mode==='goals' ? (b.goals-a.goals || b.count-a.count)
+                   : (b.count-a.count || b.goals-a.goals));
+  let delay = 0;
+  document.getElementById('board').innerHTML = sorted.map((c,i)=>{
+    const s = styleFor(c.club);
+    const dots = Array.from({length:c.goals},()=> {
+      delay += 12;
+      return `<span class="dot" style="background:${s.bg};animation-delay:${delay}ms"></span>`;
+    }).join('');
+    const chips = c.scorers.map(p=>`<span class="chip"><b>${p[0]}</b>&nbsp;${p[1]}</span>`).join('');
+    const big = mode==='goals' ? c.goals : c.count;
+    const unit = mode==='goals' ? 'goals' : (c.count===1?'scorer':'scorers');
+    return `<div class="row${i<3?' top3':''}">
+      <div class="rank">${String(i+1).padStart(2,'0')}</div>
+      <div class="club-cell">${badge(c.club)}
+        <div><div class="club-name">${c.club}</div><div class="club-league">${c.league||''}</div></div>
+      </div>
+      <div class="mid"><div class="dots">${dots}</div><div class="scorers">${chips}</div></div>
+      <div class="totals"><div class="big" style="color:${i<3?'var(--gold)':'var(--chalk)'}">${big}</div>
+      <div class="unit">${unit}</div></div>
+    </div>`;
+  }).join('');
+}
+
+function hydrate(data){
+  clubs = data.clubs.map(c=>({
+    ...c,
+    goals: c.scorers.reduce((s,p)=>s+p[1],0),
+    count: c.scorers.length
+  }));
+
+  const allPlayers = clubs.flatMap(c=>c.scorers.map(p=>({name:p[0], g:p[1], club:c.club})));
+  const top5 = allPlayers.sort((a,b)=>b.g-a.g).slice(0,5);
+  document.getElementById('boot').innerHTML = top5.map((p,i)=>`
+    <div class="boot${i===0?' leader':''}">
+      ${i===0?'<span class="crown">Leads</span>':''}
+      <div class="g">${p.g}</div>
+      <div class="name">${p.name}</div>
+      <div class="club">${badge(p.club,true)} ${p.club}</div>
+    </div>`).join('');
+
+  const topClub  = [...clubs].sort((a,b)=>b.goals-a.goals)[0];
+  const mostClub = [...clubs].sort((a,b)=>b.count-a.count)[0];
+  document.getElementById('stat-goals').textContent = clubs.reduce((s,c)=>s+c.goals,0);
+  document.getElementById('stat-clubs').textContent = clubs.length + '+';
+  document.getElementById('stat-top-num').textContent = topClub.goals;
+  document.getElementById('stat-top-lbl').textContent = topClub.club + ', top club';
+  document.getElementById('stat-most-num').textContent = mostClub.count;
+  document.getElementById('stat-most-lbl').textContent = mostClub.club + ' scorers, most of any club';
+  document.getElementById('updated').textContent =
+    new Date(data.updated + 'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+
+  if (data.unmapped && data.unmapped.length){
+    document.getElementById('footnote').innerHTML +=
+      ` <b>${data.unmapped.length} scorer(s)</b> aren't mapped to a club yet - see data.json.`;
+  }
+  render();
+}
+
+document.getElementById('byGoals').onclick  = e=>{ mode='goals';   setToggle(e.target); render(); };
+document.getElementById('byScorers').onclick = e=>{ mode='scorers'; setToggle(e.target); render(); };
+function setToggle(btn){
+  document.querySelectorAll('.toggle button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+
+fetch('data.json', {cache:'no-store'})
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(hydrate)
+  .catch(()=> hydrate(SEED));
+</script>
+</body>
+</html>

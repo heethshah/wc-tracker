@@ -1,0 +1,28 @@
+{
+  "updated": "2026-07-03",
+  "source": "seeded manually from NBC Sports / Goal.com trackers",
+  "clubs": [
+    {"club": "Real Madrid", "league": "La Liga", "scorers": [["Mbappé", 6], ["Vinícius Jr", 4], ["Bellingham", 2], ["Güler", 1]]},
+    {"club": "Paris Saint-Germain", "league": "Ligue 1", "scorers": [["Dembélé", 4], ["Barcola", 2], ["Doué", 1], ["Hakimi", 1], ["João Neves", 1], ["Nuno Mendes", 1]]},
+    {"club": "Inter Miami", "league": "MLS", "scorers": [["Messi", 7]]},
+    {"club": "Bayern Munich", "league": "Bundesliga", "scorers": [["Kane", 5], ["Musiala", 1], ["Luis Díaz", 1]]},
+    {"club": "Arsenal", "league": "Premier League", "scorers": [["Havertz", 3], ["Trossard", 2], ["Martinelli", 1], ["Gyökeres", 1]]},
+    {"club": "Manchester United", "league": "Premier League", "scorers": [["Cunha", 3], ["Amad", 2], ["Casemiro", 1], ["Rashford", 1]]},
+    {"club": "Sunderland", "league": "Premier League", "scorers": [["Brobbey", 3], ["Diarra", 2], ["Xhaka", 1], ["Isidor", 1]]},
+    {"club": "Crystal Palace", "league": "Premier League", "scorers": [["Ismaïla Sarr", 4], ["Kamada", 2], ["Muñoz", 1]]},
+    {"club": "Liverpool", "league": "Premier League", "scorers": [["Gakpo", 3], ["Salah", 1], ["Van Dijk", 1], ["Isak", 1]]},
+    {"club": "Manchester City", "league": "Premier League", "scorers": [["Haaland", 5]]},
+    {"club": "Newcastle United", "league": "Premier League", "scorers": [["Elanga", 2], ["Wissa", 2]]},
+    {"club": "Villarreal", "league": "La Liga", "scorers": [["Nicolas Pépé", 2], ["Pape Gueye", 2]]},
+    {"club": "Napoli", "league": "Serie A", "scorers": [["Lukaku", 2], ["De Bruyne", 1]]},
+    {"club": "Aston Villa", "league": "Premier League", "scorers": [["Tielemans", 2], ["McGinn", 1]]},
+    {"club": "Juventus", "league": "Serie A", "scorers": [["Jonathan David", 3]]},
+    {"club": "Al-Nassr", "league": "Saudi Pro League", "scorers": [["Ronaldo", 3]]},
+    {"club": "PSV Eindhoven", "league": "Eredivisie", "scorers": [["Saibari", 3]]},
+    {"club": "VfB Stuttgart", "league": "Bundesliga", "scorers": [["Undav", 3]]},
+    {"club": "SC Freiburg", "league": "Bundesliga", "scorers": [["Manzambi", 3]]},
+    {"club": "AS Monaco", "league": "Ligue 1", "scorers": [["Balogun", 3]]},
+    {"club": "Al-Qadsiah", "league": "Saudi Pro League", "scorers": [["Quiñones", 3]]}
+  ],
+  "unmapped": []
+}
