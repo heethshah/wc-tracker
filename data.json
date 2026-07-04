@@ -1,15 +1,65 @@
 {
   "updated": "2026-07-04",
-  "source": "football-data.org (scorers + per-player club lookup)",
+  "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
-      "club": "France",
-      "league": "FIFA World Cup",
+      "club": "Real Madrid",
+      "league": "",
       "scorers": [
         [
           "Mbappé",
           6
         ],
+        [
+          "Vinicius Jr",
+          4
+        ],
+        [
+          "Bellingham",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Crystal Palace",
+      "league": "",
+      "scorers": [
+        [
+          "Sarr",
+          4
+        ],
+        [
+          "Kamada",
+          2
+        ],
+        [
+          "Muñoz",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Bayern Munich",
+      "league": "",
+      "scorers": [
+        [
+          "Kane",
+          5
+        ],
+        [
+          "Musiala",
+          1
+        ],
+        [
+          "Díaz",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Paris SG",
+      "league": "",
+      "scorers": [
         [
           "Dembélé",
           4
@@ -17,178 +67,10 @@
         [
           "Barcola",
           2
-        ]
-      ]
-    },
-    {
-      "club": "Germany",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Havertz",
-          3
         ],
         [
-          "Undav",
-          3
-        ],
-        [
-          "Nmecha",
+          "Neves",
           1
-        ],
-        [
-          "Schlotterbeck",
-          1
-        ],
-        [
-          "Musiala",
-          1
-        ],
-        [
-          "Brown",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Senegal",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Sarr",
-          4
-        ],
-        [
-          "Diarra",
-          2
-        ],
-        [
-          "Gueye",
-          2
-        ],
-        [
-          "M'Baye",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Netherlands",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Brobbey",
-          3
-        ],
-        [
-          "Gakpo",
-          3
-        ],
-        [
-          "Summerville",
-          2
-        ],
-        [
-          "Dijk",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Switzerland",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Manzambi",
-          3
-        ],
-        [
-          "Embolo",
-          2
-        ],
-        [
-          "Vargas",
-          2
-        ],
-        [
-          "Xhaka",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "England",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Kane",
-          5
-        ],
-        [
-          "Bellingham",
-          2
-        ],
-        [
-          "Rashford",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Sweden",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Ayari",
-          2
-        ],
-        [
-          "Elanga",
-          2
-        ],
-        [
-          "Isak",
-          1
-        ],
-        [
-          "Gyökeres",
-          1
-        ],
-        [
-          "Svanberg",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Norway",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Haaland",
-          5
-        ],
-        [
-          "Østigård",
-          1
-        ],
-        [
-          "Pedersen",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Brazil",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Vinicius Jr",
-          4
-        ],
-        [
-          "Cunha",
-          3
         ]
       ]
     },
@@ -203,114 +85,74 @@
       ]
     },
     {
-      "club": "Japan",
-      "league": "FIFA World Cup",
+      "club": "Liverpool",
+      "league": "",
       "scorers": [
         [
-          "Kamada",
-          2
-        ],
-        [
-          "Ueda",
-          2
-        ],
-        [
-          "Nakamura",
-          1
-        ],
-        [
-          "Ito",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Mexico",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Quiñones",
+          "Gakpo",
           3
         ],
         [
-          "Jiménez",
-          2
-        ],
-        [
-          "Romo",
+          "Dijk",
           1
-        ]
-      ]
-    },
-    {
-      "club": "Canada",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "David",
-          3
         ],
         [
-          "Larin",
-          2
-        ],
-        [
-          "Saliba",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Belgium",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Trossard",
-          2
-        ],
-        [
-          "Lukaku",
-          2
-        ],
-        [
-          "Tielemans",
-          2
-        ]
-      ]
-    },
-    {
-      "club": "Egypt",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Ashour",
-          2
-        ],
-        [
-          "Ziko",
+          "Isak",
           1
         ],
         [
           "Salah",
           1
+        ]
+      ]
+    },
+    {
+      "club": "Arsenal",
+      "league": "",
+      "scorers": [
+        [
+          "Havertz",
+          3
         ],
         [
-          "Trezeguet",
+          "Trossard",
+          2
+        ],
+        [
+          "Gyökeres",
           1
         ]
       ]
     },
     {
-      "club": "United States",
-      "league": "FIFA World Cup",
+      "club": "Sunderland",
+      "league": "",
       "scorers": [
         [
-          "Balogun",
+          "Brobbey",
           3
         ],
         [
-          "Reyna",
+          "Diarra",
+          2
+        ],
+        [
+          "Xhaka",
           1
+        ]
+      ]
+    },
+    {
+      "club": "Villarreal",
+      "league": "",
+      "scorers": [
+        [
+          "Pépé",
+          2
+        ],
+        [
+          "Gueye",
+          2
         ],
         [
           "Freeman",
@@ -319,15 +161,101 @@
       ]
     },
     {
-      "club": "Ivory Coast",
-      "league": "FIFA World Cup",
+      "club": "Newcastle United",
+      "league": "",
       "scorers": [
+        [
+          "Wissa",
+          3
+        ],
+        [
+          "Elanga",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Manchester United",
+      "league": "",
+      "scorers": [
+        [
+          "Cunha",
+          3
+        ],
         [
           "Diallo",
           2
+        ]
+      ]
+    },
+    {
+      "club": "Manchester City",
+      "league": "",
+      "scorers": [
+        [
+          "Haaland",
+          5
+        ]
+      ]
+    },
+    {
+      "club": "Al-Nassr",
+      "league": "",
+      "scorers": [
+        [
+          "Ronaldo",
+          3
         ],
         [
-          "Pépé",
+          "Amri",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Real Sociedad",
+      "league": "",
+      "scorers": [
+        [
+          "Oyarzabal",
+          4
+        ]
+      ]
+    },
+    {
+      "club": "Al Ahly",
+      "league": "",
+      "scorers": [
+        [
+          "Ashour",
+          2
+        ],
+        [
+          "Trezeguet",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Feyenoord",
+      "league": "",
+      "scorers": [
+        [
+          "Ueda",
+          2
+        ],
+        [
+          "Hwang",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Ahli",
+      "league": "",
+      "scorers": [
+        [
+          "Mahrez",
           2
         ],
         [
@@ -337,106 +265,42 @@
       ]
     },
     {
-      "club": "Spain",
-      "league": "FIFA World Cup",
+      "club": "Aston Villa",
+      "league": "",
       "scorers": [
         [
-          "Oyarzabal",
-          4
+          "Tielemans",
+          2
         ],
         [
-          "Yamal",
+          "McGinn",
           1
         ]
       ]
     },
     {
-      "club": "New Zealand",
-      "league": "FIFA World Cup",
+      "club": "Al-Qadsiah",
+      "league": "",
       "scorers": [
         [
-          "Just",
+          "Quiñones",
           3
-        ],
-        [
-          "Surman",
-          1
         ]
       ]
     },
     {
-      "club": "Portugal",
-      "league": "FIFA World Cup",
+      "club": "Monaco",
+      "league": "",
       "scorers": [
         [
-          "Ronaldo",
+          "Balogun",
           3
-        ],
-        [
-          "Neves",
-          1
         ]
       ]
     },
     {
-      "club": "Iran",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Rezaeian",
-          2
-        ],
-        [
-          "Mohebi",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Austria",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Arnautovic",
-          2
-        ],
-        [
-          "Schmid",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Colombia",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Muñoz",
-          2
-        ],
-        [
-          "Díaz",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Bosnia-Herzegovina",
-      "league": "FIFA World Cup",
-      "scorers": [
-        [
-          "Mahmic",
-          2
-        ],
-        [
-          "Lukić",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Morocco",
-      "league": "FIFA World Cup",
+      "club": "PSV Eindhoven",
+      "league": "",
       "scorers": [
         [
           "Saibari",
@@ -445,74 +309,126 @@
       ]
     },
     {
-      "club": "Congo DR",
-      "league": "FIFA World Cup",
+      "club": "Stuttgart",
+      "league": "",
       "scorers": [
         [
-          "Wissa",
+          "Undav",
           3
         ]
       ]
     },
     {
-      "club": "Czechia",
-      "league": "FIFA World Cup",
+      "club": "Motherwell",
+      "league": "",
       "scorers": [
         [
-          "Krejčí",
+          "Just",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Freiburg",
+      "league": "",
+      "scorers": [
+        [
+          "Manzambi",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Juventus",
+      "league": "",
+      "scorers": [
+        [
+          "David",
+          3
+        ]
+      ]
+    },
+    {
+      "club": "Borussia Dortmund",
+      "league": "",
+      "scorers": [
+        [
+          "Nmecha",
           1
         ],
         [
-          "Sadílek",
+          "Schlotterbeck",
           1
         ]
       ]
     },
     {
-      "club": "South Korea",
-      "league": "FIFA World Cup",
+      "club": "Barcelona",
+      "league": "",
       "scorers": [
         [
-          "Hwang",
+          "Rashford",
           1
         ],
         [
-          "Oh",
+          "Yamal",
           1
         ]
       ]
     },
     {
-      "club": "Australia",
-      "league": "FIFA World Cup",
+      "club": "Fulham",
+      "league": "",
       "scorers": [
         [
-          "Irankunda",
-          1
-        ],
-        [
-          "Metcalfe",
-          1
+          "Jiménez",
+          2
         ]
       ]
     },
     {
-      "club": "Cape Verde Islands",
-      "league": "FIFA World Cup",
+      "club": "Southampton",
+      "league": "",
       "scorers": [
         [
-          "Pina",
-          1
-        ],
-        [
-          "Varela",
-          1
+          "Larin",
+          2
         ]
       ]
     },
     {
-      "club": "Uruguay",
-      "league": "FIFA World Cup",
+      "club": "Rennes",
+      "league": "",
+      "scorers": [
+        [
+          "Embolo",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "West Ham United",
+      "league": "",
+      "scorers": [
+        [
+          "Summerville",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Brighton and Hove Albion",
+      "league": "",
+      "scorers": [
+        [
+          "Ayari",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Sporting CP",
+      "league": "",
       "scorers": [
         [
           "Araújo",
@@ -521,18 +437,78 @@
       ]
     },
     {
-      "club": "Algeria",
-      "league": "FIFA World Cup",
+      "club": "Foolad Khuzestan",
+      "league": "",
       "scorers": [
         [
-          "Mahrez",
+          "Rezaeian",
           2
         ]
       ]
     },
     {
-      "club": "Paraguay",
-      "league": "FIFA World Cup",
+      "club": "Crvena Zvezda",
+      "league": "",
+      "scorers": [
+        [
+          "Arnautovic",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Sevilla",
+      "league": "",
+      "scorers": [
+        [
+          "Vargas",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Slovan Liberec",
+      "league": "",
+      "scorers": [
+        [
+          "Mahmic",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Napoli",
+      "league": "",
+      "scorers": [
+        [
+          "Lukaku",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Teplice",
+      "league": "",
+      "scorers": [
+        [
+          "Krejčí",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Universitatea Cluj",
+      "league": "",
+      "scorers": [
+        [
+          "Lukić",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Sporting Lisbon",
+      "league": "",
       "scorers": [
         [
           "Mauricio",
@@ -541,8 +517,18 @@
       ]
     },
     {
-      "club": "Qatar",
-      "league": "FIFA World Cup",
+      "club": "Borussia Mönchengladbach",
+      "league": "",
+      "scorers": [
+        [
+          "Reyna",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Sadd",
+      "league": "",
       "scorers": [
         [
           "Khoukhi",
@@ -551,18 +537,28 @@
       ]
     },
     {
-      "club": "Scotland",
-      "league": "FIFA World Cup",
+      "club": "Watford",
+      "league": "",
       "scorers": [
         [
-          "McGinn",
+          "Irankunda",
           1
         ]
       ]
     },
     {
-      "club": "Curaçao",
-      "league": "FIFA World Cup",
+      "club": "St Pauli",
+      "league": "",
+      "scorers": [
+        [
+          "Metcalfe",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Zürich",
+      "league": "",
       "scorers": [
         [
           "Comenencia",
@@ -571,8 +567,28 @@
       ]
     },
     {
-      "club": "Tunisia",
-      "league": "FIFA World Cup",
+      "club": "Eintracht Frankfurt",
+      "league": "",
+      "scorers": [
+        [
+          "Brown",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Stade de Reims",
+      "league": "",
+      "scorers": [
+        [
+          "Nakamura",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Maribor",
+      "league": "",
       "scorers": [
         [
           "Rekik",
@@ -581,18 +597,38 @@
       ]
     },
     {
-      "club": "Saudi Arabia",
-      "league": "FIFA World Cup",
+      "club": "Wolfsburg",
+      "league": "",
       "scorers": [
         [
-          "Amri",
+          "Svanberg",
           1
         ]
       ]
     },
     {
-      "club": "Iraq",
-      "league": "FIFA World Cup",
+      "club": "Rostov",
+      "league": "",
+      "scorers": [
+        [
+          "Mohebi",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "_Free Agent Soccer",
+      "league": "",
+      "scorers": [
+        [
+          "M'Baye",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Karma",
+      "league": "",
       "scorers": [
         [
           "Hussein",
@@ -601,8 +637,28 @@
       ]
     },
     {
-      "club": "Jordan",
-      "league": "FIFA World Cup",
+      "club": "Genoa",
+      "league": "",
+      "scorers": [
+        [
+          "Østigård",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Werder Bremen",
+      "league": "",
+      "scorers": [
+        [
+          "Schmid",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Sailiya",
+      "league": "",
       "scorers": [
         [
           "Olwan",
@@ -611,8 +667,8 @@
       ]
     },
     {
-      "club": "Croatia",
-      "league": "FIFA World Cup",
+      "club": "Como",
+      "league": "",
       "scorers": [
         [
           "Baturina",
@@ -631,8 +687,8 @@
       ]
     },
     {
-      "club": "Ghana",
-      "league": "FIFA World Cup",
+      "club": "FC Nordsjælland",
+      "league": "",
       "scorers": [
         [
           "Yirenkyi",
@@ -641,8 +697,8 @@
       ]
     },
     {
-      "club": "Uzbekistan",
-      "league": "FIFA World Cup",
+      "club": "CSKA Moscow",
+      "league": "",
       "scorers": [
         [
           "Fayzullaev",
@@ -661,11 +717,41 @@
       ]
     },
     {
-      "club": "South Africa",
-      "league": "FIFA World Cup",
+      "club": "Slavia Prague",
+      "league": "",
+      "scorers": [
+        [
+          "Sadílek",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Mamelodi Sundowns",
+      "league": "",
       "scorers": [
         [
           "Mokoena",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Anderlecht",
+      "league": "",
+      "scorers": [
+        [
+          "Saliba",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "CD Guadalajara",
+      "league": "",
+      "scorers": [
+        [
+          "Romo",
           1
         ]
       ]
@@ -681,6 +767,26 @@
       ]
     },
     {
+      "club": "Genk",
+      "league": "",
+      "scorers": [
+        [
+          "Ito",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Krasnodar",
+      "league": "",
+      "scorers": [
+        [
+          "Pina",
+          1
+        ]
+      ]
+    },
+    {
       "club": "Fluminense",
       "league": "Campeonato Brasileiro Série A",
       "scorers": [
@@ -689,7 +795,52 @@
           1
         ]
       ]
+    },
+    {
+      "club": "Maccabi Tel Aviv",
+      "league": "",
+      "scorers": [
+        [
+          "Varela",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Portland Timbers",
+      "league": "",
+      "scorers": [
+        [
+          "Surman",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Pyramids",
+      "league": "",
+      "scorers": [
+        [
+          "Ziko",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Torino",
+      "league": "",
+      "scorers": [
+        [
+          "Pedersen",
+          1
+        ]
+      ]
     }
   ],
-  "unmapped": []
+  "unmapped": [
+    [
+      "Hyun-Gyu Oh",
+      1
+    ]
+  ]
 }
