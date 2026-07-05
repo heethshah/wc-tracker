@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04",
+  "updated": "2026-07-05",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -8,7 +8,7 @@
       "scorers": [
         [
           "Mbappé",
-          6
+          7
         ],
         [
           "Vinicius Jr",
@@ -223,20 +223,6 @@
       ]
     },
     {
-      "club": "Al Ahly",
-      "league": "",
-      "scorers": [
-        [
-          "Ashour",
-          2
-        ],
-        [
-          "Trezeguet",
-          1
-        ]
-      ]
-    },
-    {
       "club": "Feyenoord",
       "league": "",
       "scorers": [
@@ -427,6 +413,16 @@
       ]
     },
     {
+      "club": "Al Ahly",
+      "league": "",
+      "scorers": [
+        [
+          "Ashour",
+          2
+        ]
+      ]
+    },
+    {
       "club": "Sporting CP",
       "league": "",
       "scorers": [
@@ -477,11 +473,31 @@
       ]
     },
     {
+      "club": "Al Ain",
+      "league": "",
+      "scorers": [
+        [
+          "Rahimi",
+          2
+        ]
+      ]
+    },
+    {
       "club": "Napoli",
       "league": "",
       "scorers": [
         [
           "Lukaku",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Girona",
+      "league": "",
+      "scorers": [
+        [
+          "Ounahi",
           2
         ]
       ]
@@ -822,16 +838,6 @@
       "scorers": [
         [
           "Ziko",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Torino",
-      "league": "",
-      "scorers": [
-        [
-          "Pedersen",
           1
         ]
       ]
