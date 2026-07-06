@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-07-06",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -16,7 +16,25 @@
         ],
         [
           "Bellingham",
-          2
+          4
+        ]
+      ]
+    },
+    {
+      "club": "Bayern Munich",
+      "league": "",
+      "scorers": [
+        [
+          "Kane",
+          6
+        ],
+        [
+          "Musiala",
+          1
+        ],
+        [
+          "Díaz",
+          1
         ]
       ]
     },
@@ -39,24 +57,6 @@
       ]
     },
     {
-      "club": "Bayern Munich",
-      "league": "",
-      "scorers": [
-        [
-          "Kane",
-          5
-        ],
-        [
-          "Musiala",
-          1
-        ],
-        [
-          "Díaz",
-          1
-        ]
-      ]
-    },
-    {
       "club": "Paris SG",
       "league": "",
       "scorers": [
@@ -71,6 +71,16 @@
         [
           "Neves",
           1
+        ]
+      ]
+    },
+    {
+      "club": "Manchester City",
+      "league": "",
+      "scorers": [
+        [
+          "Haaland",
+          7
         ]
       ]
     },
@@ -189,16 +199,6 @@
       ]
     },
     {
-      "club": "Manchester City",
-      "league": "",
-      "scorers": [
-        [
-          "Haaland",
-          5
-        ]
-      ]
-    },
-    {
       "club": "Al-Nassr",
       "league": "",
       "scorers": [
@@ -209,6 +209,16 @@
         [
           "Amri",
           1
+        ]
+      ]
+    },
+    {
+      "club": "Al-Qadsiah",
+      "league": "",
+      "scorers": [
+        [
+          "Quiñones",
+          4
         ]
       ]
     },
@@ -265,11 +275,11 @@
       ]
     },
     {
-      "club": "Al-Qadsiah",
+      "club": "Fulham",
       "league": "",
       "scorers": [
         [
-          "Quiñones",
+          "Jiménez",
           3
         ]
       ]
@@ -359,16 +369,6 @@
         [
           "Yamal",
           1
-        ]
-      ]
-    },
-    {
-      "club": "Fulham",
-      "league": "",
-      "scorers": [
-        [
-          "Jiménez",
-          2
         ]
       ]
     },
