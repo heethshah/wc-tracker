@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -95,28 +95,6 @@
       ]
     },
     {
-      "club": "Liverpool",
-      "league": "",
-      "scorers": [
-        [
-          "Gakpo",
-          3
-        ],
-        [
-          "Dijk",
-          1
-        ],
-        [
-          "Isak",
-          1
-        ],
-        [
-          "Salah",
-          1
-        ]
-      ]
-    },
-    {
       "club": "Arsenal",
       "league": "",
       "scorers": [
@@ -148,6 +126,24 @@
         ],
         [
           "Xhaka",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Liverpool",
+      "league": "",
+      "scorers": [
+        [
+          "Gakpo",
+          3
+        ],
+        [
+          "Dijk",
+          1
+        ],
+        [
+          "Isak",
           1
         ]
       ]
@@ -345,6 +341,16 @@
       ]
     },
     {
+      "club": "Napoli",
+      "league": "",
+      "scorers": [
+        [
+          "Lukaku",
+          3
+        ]
+      ]
+    },
+    {
       "club": "Borussia Dortmund",
       "league": "",
       "scorers": [
@@ -483,11 +489,11 @@
       ]
     },
     {
-      "club": "Napoli",
+      "club": "Bayer Leverkusen",
       "league": "",
       "scorers": [
         [
-          "Lukaku",
+          "Tillman",
           2
         ]
       ]
@@ -498,6 +504,16 @@
       "scorers": [
         [
           "Ounahi",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Atalanta",
+      "league": "",
+      "scorers": [
+        [
+          "Ketelaere",
           2
         ]
       ]
@@ -828,16 +844,6 @@
       "scorers": [
         [
           "Surman",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Pyramids",
-      "league": "",
-      "scorers": [
-        [
-          "Ziko",
           1
         ]
       ]
