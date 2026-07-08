@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07",
+  "updated": "2026-07-08",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -57,6 +57,16 @@
       ]
     },
     {
+      "club": "Internacional CF Miami",
+      "league": "MLS",
+      "scorers": [
+        [
+          "Messi",
+          8
+        ]
+      ]
+    },
+    {
       "club": "Paris SG",
       "league": "",
       "scorers": [
@@ -80,16 +90,6 @@
       "scorers": [
         [
           "Haaland",
-          7
-        ]
-      ]
-    },
-    {
-      "club": "Internacional CF Miami",
-      "league": "MLS",
-      "scorers": [
-        [
-          "Messi",
           7
         ]
       ]
@@ -479,6 +479,16 @@
       ]
     },
     {
+      "club": "Pyramids",
+      "league": "",
+      "scorers": [
+        [
+          "Ziko",
+          2
+        ]
+      ]
+    },
+    {
       "club": "Al Ain",
       "league": "",
       "scorers": [
@@ -834,16 +844,6 @@
       "scorers": [
         [
           "Varela",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Portland Timbers",
-      "league": "",
-      "scorers": [
-        [
-          "Surman",
           1
         ]
       ]
