@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -8,7 +8,7 @@
       "scorers": [
         [
           "Mbappé",
-          7
+          8
         ],
         [
           "Vinicius Jr",
@@ -39,6 +39,24 @@
       ]
     },
     {
+      "club": "Paris SG",
+      "league": "",
+      "scorers": [
+        [
+          "Dembélé",
+          5
+        ],
+        [
+          "Barcola",
+          2
+        ],
+        [
+          "Neves",
+          1
+        ]
+      ]
+    },
+    {
       "club": "Crystal Palace",
       "league": "",
       "scorers": [
@@ -63,24 +81,6 @@
         [
           "Messi",
           8
-        ]
-      ]
-    },
-    {
-      "club": "Paris SG",
-      "league": "",
-      "scorers": [
-        [
-          "Dembélé",
-          4
-        ],
-        [
-          "Barcola",
-          2
-        ],
-        [
-          "Neves",
-          1
         ]
       ]
     },
