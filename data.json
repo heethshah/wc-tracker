@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10",
+  "updated": "2026-07-11",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -17,6 +17,28 @@
         [
           "Bellingham",
           4
+        ]
+      ]
+    },
+    {
+      "club": "Arsenal",
+      "league": "",
+      "scorers": [
+        [
+          "Havertz",
+          3
+        ],
+        [
+          "Trossard",
+          2
+        ],
+        [
+          "Merino",
+          2
+        ],
+        [
+          "Gyökeres",
+          1
         ]
       ]
     },
@@ -91,24 +113,6 @@
         [
           "Haaland",
           7
-        ]
-      ]
-    },
-    {
-      "club": "Arsenal",
-      "league": "",
-      "scorers": [
-        [
-          "Havertz",
-          3
-        ],
-        [
-          "Trossard",
-          2
-        ],
-        [
-          "Gyökeres",
-          1
         ]
       ]
     },
@@ -351,6 +355,16 @@
       ]
     },
     {
+      "club": "Atalanta",
+      "league": "",
+      "scorers": [
+        [
+          "Ketelaere",
+          3
+        ]
+      ]
+    },
+    {
       "club": "Borussia Dortmund",
       "league": "",
       "scorers": [
@@ -514,16 +528,6 @@
       "scorers": [
         [
           "Ounahi",
-          2
-        ]
-      ]
-    },
-    {
-      "club": "Atalanta",
-      "league": "",
-      "scorers": [
-        [
-          "Ketelaere",
           2
         ]
       ]
@@ -834,16 +838,6 @@
       "scorers": [
         [
           "Canobbio",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Maccabi Tel Aviv",
-      "league": "",
-      "scorers": [
-        [
-          "Varela",
           1
         ]
       ]
