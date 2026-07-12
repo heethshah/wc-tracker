@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -11,11 +11,11 @@
           8
         ],
         [
-          "Vinicius Jr",
-          4
+          "Bellingham",
+          6
         ],
         [
-          "Bellingham",
+          "Vinicius Jr",
           4
         ]
       ]
@@ -513,11 +513,31 @@
       ]
     },
     {
+      "club": "Inter Milan",
+      "league": "",
+      "scorers": [
+        [
+          "Martínez",
+          2
+        ]
+      ]
+    },
+    {
       "club": "Bayer Leverkusen",
       "league": "",
       "scorers": [
         [
           "Tillman",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Nottingham Forest",
+      "league": "",
+      "scorers": [
+        [
+          "Ndoye",
           2
         ]
       ]
@@ -818,26 +838,6 @@
       "scorers": [
         [
           "Ito",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Krasnodar",
-      "league": "",
-      "scorers": [
-        [
-          "Pina",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Fluminense",
-      "league": "Campeonato Brasileiro Série A",
-      "scorers": [
-        [
-          "Canobbio",
           1
         ]
       ]
