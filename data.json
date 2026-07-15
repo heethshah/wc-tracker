@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14",
+  "updated": "2026-07-15",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -199,6 +199,16 @@
       ]
     },
     {
+      "club": "Real Sociedad",
+      "league": "",
+      "scorers": [
+        [
+          "Oyarzabal",
+          5
+        ]
+      ]
+    },
+    {
       "club": "Al-Nassr",
       "league": "",
       "scorers": [
@@ -218,16 +228,6 @@
       "scorers": [
         [
           "Quiñones",
-          4
-        ]
-      ]
-    },
-    {
-      "club": "Real Sociedad",
-      "league": "",
-      "scorers": [
-        [
-          "Oyarzabal",
           4
         ]
       ]
@@ -379,20 +379,6 @@
       ]
     },
     {
-      "club": "Barcelona",
-      "league": "",
-      "scorers": [
-        [
-          "Rashford",
-          1
-        ],
-        [
-          "Yamal",
-          1
-        ]
-      ]
-    },
-    {
       "club": "Southampton",
       "league": "",
       "scorers": [
@@ -533,6 +519,16 @@
       ]
     },
     {
+      "club": "Tottenham Hotspur",
+      "league": "",
+      "scorers": [
+        [
+          "Porro",
+          2
+        ]
+      ]
+    },
+    {
       "club": "Nottingham Forest",
       "league": "",
       "scorers": [
@@ -558,6 +554,16 @@
       "scorers": [
         [
           "Krejčí",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Beşiktaş JK",
+      "league": "",
+      "scorers": [
+        [
+          "Oh",
           1
         ]
       ]
@@ -753,6 +759,16 @@
       ]
     },
     {
+      "club": "Barcelona",
+      "league": "",
+      "scorers": [
+        [
+          "Rashford",
+          1
+        ]
+      ]
+    },
+    {
       "club": "FC Nordsjælland",
       "league": "",
       "scorers": [
@@ -843,10 +859,5 @@
       ]
     }
   ],
-  "unmapped": [
-    [
-      "Hyun-Gyu Oh",
-      1
-    ]
-  ]
+  "unmapped": []
 }
