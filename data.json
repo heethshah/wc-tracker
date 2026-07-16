@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15",
+  "updated": "2026-07-16",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -355,6 +355,16 @@
       ]
     },
     {
+      "club": "Inter Milan",
+      "league": "",
+      "scorers": [
+        [
+          "Martínez",
+          3
+        ]
+      ]
+    },
+    {
       "club": "Atalanta",
       "league": "",
       "scorers": [
@@ -499,16 +509,6 @@
       ]
     },
     {
-      "club": "Inter Milan",
-      "league": "",
-      "scorers": [
-        [
-          "Martínez",
-          2
-        ]
-      ]
-    },
-    {
       "club": "Bayer Leverkusen",
       "league": "",
       "scorers": [
@@ -544,6 +544,16 @@
       "scorers": [
         [
           "Ounahi",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Chelsea",
+      "league": "Premier League",
+      "scorers": [
+        [
+          "Fernández",
           2
         ]
       ]
@@ -844,16 +854,6 @@
       "scorers": [
         [
           "Galarza",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Genk",
-      "league": "",
-      "scorers": [
-        [
-          "Ito",
           1
         ]
       ]
