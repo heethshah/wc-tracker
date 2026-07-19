@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "source": "football-data.org scorers + per-player club lookup (with national-team guard)",
   "clubs": [
     {
@@ -8,11 +8,11 @@
       "scorers": [
         [
           "Mbappé",
-          8
+          10
         ],
         [
           "Bellingham",
-          6
+          7
         ],
         [
           "Vinicius Jr",
@@ -29,6 +29,10 @@
           3
         ],
         [
+          "Saka",
+          3
+        ],
+        [
           "Trossard",
           2
         ],
@@ -38,6 +42,24 @@
         ],
         [
           "Gyökeres",
+          1
+        ]
+      ]
+    },
+    {
+      "club": "Paris SG",
+      "league": "",
+      "scorers": [
+        [
+          "Dembélé",
+          6
+        ],
+        [
+          "Barcola",
+          3
+        ],
+        [
+          "Neves",
           1
         ]
       ]
@@ -56,24 +78,6 @@
         ],
         [
           "Díaz",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Paris SG",
-      "league": "",
-      "scorers": [
-        [
-          "Dembélé",
-          5
-        ],
-        [
-          "Barcola",
-          2
-        ],
-        [
-          "Neves",
           1
         ]
       ]
@@ -242,20 +246,6 @@
         ],
         [
           "Hwang",
-          1
-        ]
-      ]
-    },
-    {
-      "club": "Al-Ahli",
-      "league": "",
-      "scorers": [
-        [
-          "Mahrez",
-          2
-        ],
-        [
-          "Kessié",
           1
         ]
       ]
@@ -504,6 +494,16 @@
       "scorers": [
         [
           "Rahimi",
+          2
+        ]
+      ]
+    },
+    {
+      "club": "Al-Ahli",
+      "league": "",
+      "scorers": [
+        [
+          "Mahrez",
           2
         ]
       ]
